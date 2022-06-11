@@ -1,0 +1,8 @@
+CREATE DATABASE users; 
+CREATE table users( 
+    sno int AUTO_INCREMENT PRIMARY, 
+    username varchar(27) UNIQUE, 
+    password varchar(255) UNIQUE, 
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, 
+    PRIMARY KEY(sno) 
+);
